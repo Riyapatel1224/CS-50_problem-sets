@@ -1,11 +1,12 @@
-def main():
-    amount_due = 50
+amount_due = 50
+while amount_due > 0:
     print("Amount Due: ", amount_due)
-    insert_coin = input("Insert Coin: ")
-    if insert_coin == "5" or "10" or "25":
-        print(int(amount_due) - int(insert_coin))
-    elif():
-        print(amount_due)
-
-
-main()
+    coin = int(input("Insert Coin: "))
+    # subtracting if the value of coin is 25 10 5
+    if coin in [25, 10, 5]:
+        # amount_due=amount_due-coin
+        amount_due -= coin
+# converting the negetive value to positive
+changed_owed = abs(amount_due)
+# print the remaining chnage machine has to give the user
+print("Changed Owed: ", changed_owed)
